@@ -8,11 +8,33 @@
     */
 
     //ENTRADA
+    const candidatos = [];
+const votos = [0, 0, 0];
+
+//PROCESSAMENTO
+for (let i = 1; i <= 3; i++) {
+  const candidato = prompt(`Informe o nome do candidato ${i}:`);
+  candidatos.push(candidato);
+}
+
+const quantidadeDeAlunos = parseInt(prompt("Informe a quantidade de alunos votantes:"));
 
 
-    //PROCESSAMENTO
+for (let i = 1; i <= quantidadeDeAlunos; i++) {
+  const voto = parseInt(prompt(`Aluno ${i}, escolha seu candidato:\n1. ${candidatos[0]}\n2. ${candidatos[1]}\n3. ${candidatos[2]}`));
 
+  if (voto >= 1 && voto <= 3) {
+    votos[voto - 1]++;
+  } else {
+    alert("Opção de voto inválida. Por favor, escolha um número de 1 a 3.");
+    i--;
+  }
+}
 
-    //SAÍDA
+//SAÍDA
+for (let i = 0; i < 3; i++) {
+  const porcentagem = (votos[i] / quantidadeDeAlunos) * 100;
+  alert(`${candidatos[i]}: ${votos[i]} votos (${porcentagem.toFixed(2)}%)`);
+}
 
 </script>

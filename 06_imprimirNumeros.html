@@ -6,11 +6,31 @@
     */
 
     //ENTRADA
+    const numeroInicial = parseInt(prompt("Informe o número inicial:"));
+const numeroFinal = parseInt(prompt("Informe o número final:"));
 
-    
-    //PROCESSAMENTO
+ //PROCESSAMENTO
+if (numeroInicial < numeroFinal) {
+  alert("Números ímpares entre os dois números:");
 
-    
-    //SAÍDA
+  for (let numero = numeroInicial; numero <= numeroFinal; numero++) {
+    if (numero % 2 !== 0) {
+      alert(numero);
+    }
+  }
+
+  alert("Números pares entre os dois números:");
+
+  for (let numero = numeroInicial; numero <= numeroFinal; numero++) {
+    if (numero % 2 === 0) {
+      alert(numero);
+    }
+  }
+
+  //SAÍDA
+  
+} else {
+  alert("Erro: O número inicial deve ser menor que o número final.");
+}
 
 </script>

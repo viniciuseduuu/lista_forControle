@@ -10,11 +10,22 @@
     */
 
     //ENTRADA
+    const listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+const letrasUnicas = [];
 
-    
-    //PROCESSAMENTO
+//PROCESSAMENTO
+for (let i = 0; i < listaDeLetras.length; i++) {
+  const letraAtual = listaDeLetras[i].toLowerCase();
 
-    
-    //SAÍDA
+  if (!letrasUnicas.includes(letraAtual)) {
+    letrasUnicas.push(letraAtual);
+  }
+}
+
+letrasUnicas.sort();
+
+//SAÍDA
+const letrasUnicasEmOrdem = letrasUnicas.join(", ");
+alert(`Letras únicas em ordem alfabética: ${letrasUnicasEmOrdem}`);
 
 </script>

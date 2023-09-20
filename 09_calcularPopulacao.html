@@ -6,11 +6,27 @@
     */
 
     //ENTRADA
+    const populacaoInicial = 50000;
+const taxaCrescimentoAnual = 0.015; 
 
-    
-    //PROCESSAMENTO
-    
+//PROCESSAMENTO
+let anos = 5;
+let populacao5Anos = populacaoInicial;
 
-    //SAÍDA
+while (anos > 0) {
+  populacao5Anos += populacao5Anos * taxaCrescimentoAnual;
+  anos--;
+}
+
+anos = 10;
+let populacao10Anos = populacaoInicial;
+
+while (anos > 0) {
+  populacao10Anos += populacao10Anos * taxaCrescimentoAnual;
+  anos--;
+}
+
+//SAÍDA
+alert(`População prevista em 5 anos: ${populacao5Anos.toFixed(0)} habitantes\nPopulação prevista em 10 anos: ${populacao10Anos.toFixed(0)} habitantes`);
 
 </script>

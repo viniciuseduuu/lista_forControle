@@ -6,11 +6,20 @@
     */
 
     //ENTRADA
+    const populacaoInicial = 80000;
+const populacaoAlvo = 200000;
+const taxaCrescimentoAnual = 0.03; // 3% expresso como decimal
 
-    
-    //PROCESSAMENTO
+//PROCESSAMENTO
+let anos = 0;
+let populacaoAtual = populacaoInicial;
 
-    
-    //SAÍDA
+while (populacaoAtual < populacaoAlvo) {
+  populacaoAtual += populacaoAtual * taxaCrescimentoAnual;
+  anos++;
+}
+
+//SAÍDA
+alert(`Serão necessários ${anos} anos para atingir uma população de ${populacaoAlvo} habitantes.`);
 
 </script>

@@ -5,11 +5,19 @@
     */
 
     //ENTRADA
+    const investimentoInicial = 1000;
+const objetivo = 2000;
+const taxaRendimentoDiaria = 0.02; 
+let dias = 0;
+let saldo = investimentoInicial;
 
+ //PROCESSAMENTO
+while (saldo < objetivo) {
+  dias++;
+  saldo += saldo * taxaRendimentoDiaria;
+}
 
-    //PROCESSAMENTO
-
-
-    //SAÍDA
+//SAÍDA
+alert(`Serão necessários ${dias} dias úteis para que o investimento alcance R$ 2.000,00.`);
 
 </script>

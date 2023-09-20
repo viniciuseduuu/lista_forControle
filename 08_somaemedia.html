@@ -6,11 +6,17 @@
     */
 
     //ENTRADA
+    const quantidadeDeNumeros = 5;
+let soma = 0;
 
+//PROCESSAMENTO
+for (let i = 1; i <= quantidadeDeNumeros; i++) {
+  const numero = parseFloat(prompt(`Informe o número ${i}:`));
+  soma += numero;
+}
 
-    //PROCESSAMENTO
-
-
-    //SAÍDA
+//SAÍDA
+const media = soma / quantidadeDeNumeros;
+alert(`Soma dos números: ${soma}\nMédia dos números: ${media.toFixed(2)}`);
 
 </script>

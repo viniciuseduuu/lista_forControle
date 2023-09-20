@@ -7,11 +7,17 @@
     */
 
     //ENTRADA
-    
+    const numeroDeNotas = parseInt(prompt("Quantas notas o aluno obteve?"));
+let somaDasNotas = 0;
 
-    //PROCESSAMENTO
-    
+//PROCESSAMENTO
+for (let i = 1; i <= numeroDeNotas; i++) {
+  const nota = parseFloat(prompt(`Informe a nota ${i}:`));
+  somaDasNotas += nota;
+}
 
-    //SAÍDA
+//SAÍDA
+const media = somaDasNotas / numeroDeNotas;
+alert(`A média das notas é: ${media.toFixed(2)}`);
 
 </script>
