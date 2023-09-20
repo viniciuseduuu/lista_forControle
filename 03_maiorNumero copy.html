@@ -1,25 +1,25 @@
 <meta charset="UTF-8">
 <script>
-    /*
-    PROBLEMA
-    Faça um programa que peça ao usuário para informar cinco números.
-    No final, apresente o maior número informado pelo usuário.
-    */
+  /*
+  PROBLEMA
+  Faça um programa que peça ao usuário para informar cinco números.
+  No final, apresente o maior número informado pelo usuário.
+  */
 
-    //ENTRADA
-    const quantidadeDeNumeros = 5;
-let maiorNumero = Number.MIN_VALUE;
+  //ENTRADA
+  const quantidadeDeNumeros = 5;
+  let maiorNumero = Number.MIN_VALUE;
 
-//PROCESSAMENTO
-for (let i = 1; i <= quantidadeDeNumeros; i++) {
-  const numero = parseFloat(prompt(`Informe o número ${i}:`));
-  
-  if (numero > maiorNumero) {
-    maiorNumero = numero;
+  //PROCESSAMENTO
+  for (let i = 1; i <= quantidadeDeNumeros; i++) {
+    const numero = parseFloat(prompt(`Informe o número ${i}:`));
+
+    if (numero > maiorNumero) {
+      maiorNumero = numero;
+    }
   }
-}
 
-//SAÍDA
-alert(`O maior número informado é: ${maiorNumero}`);
+  //SAÍDA
+  alert(`O maior número informado é: ${maiorNumero}`);
 
 </script>

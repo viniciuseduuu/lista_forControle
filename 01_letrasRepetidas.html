@@ -1,31 +1,31 @@
 <meta charset="UTF-8">
 <script>
-    /*
-    PROBLEMA
-    Considere a lista de letras abaixo:
-    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
-    Faça um programa que identifique as letras repetidas que estão contidas na lista e apresente cada letra apenas uma única vez, e em ordem alfabética.
-    *Letras maiúsculas e minúsculas são a mesma letra e não podem ser repetidas!
-    **Apresente apenas letras minúsculas!
-    */
+  /*
+  PROBLEMA
+  Considere a lista de letras abaixo:
+  let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+  Faça um programa que identifique as letras repetidas que estão contidas na lista e apresente cada letra apenas uma única vez, e em ordem alfabética.
+  *Letras maiúsculas e minúsculas são a mesma letra e não podem ser repetidas!
+  **Apresente apenas letras minúsculas!
+  */
 
-    //ENTRADA
-    const listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
-const letrasUnicas = [];
+  //ENTRADA
+  const listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+  const letrasUnicas = [];
 
-//PROCESSAMENTO
-for (let i = 0; i < listaDeLetras.length; i++) {
-  const letraAtual = listaDeLetras[i].toLowerCase();
+  //PROCESSAMENTO
+  for (let i = 0; i < listaDeLetras.length; i++) {
+    const letraAtual = listaDeLetras[i].toLowerCase();
 
-  if (!letrasUnicas.includes(letraAtual)) {
-    letrasUnicas.push(letraAtual);
+    if (!letrasUnicas.includes(letraAtual)) {
+      letrasUnicas.push(letraAtual);
+    }
   }
-}
 
-letrasUnicas.sort();
+  letrasUnicas.sort();
 
-//SAÍDA
-const letrasUnicasEmOrdem = letrasUnicas.join(", ");
-alert(`Letras únicas em ordem alfabética: ${letrasUnicasEmOrdem}`);
+  //SAÍDA
+  const letrasUnicasEmOrdem = letrasUnicas.join(", ");
+  alert(`Letras únicas em ordem alfabética: ${letrasUnicasEmOrdem}`);
 
 </script>

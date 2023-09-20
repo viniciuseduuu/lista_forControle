@@ -1,25 +1,25 @@
 <meta charset="UTF-8">
 <script>
-    /*
-    PROBLEMA
-    Supondo que a população de um país seja da ordem de 80000 habitantes, com uma taxa anual de crescimento de 3%, identifique quantos anos serão necessários para que o número de habitandes atinja 200000 habitantes.
-    */
+  /*
+  PROBLEMA
+  Supondo que a população de um país seja da ordem de 80000 habitantes, com uma taxa anual de crescimento de 3%, identifique quantos anos serão necessários para que o número de habitandes atinja 200000 habitantes.
+  */
 
-    //ENTRADA
-    const populacaoInicial = 80000;
-const populacaoAlvo = 200000;
-const taxaCrescimentoAnual = 0.03; // 3% expresso como decimal
+  //ENTRADA
+  const populacaoInicial = 80000;
+  const populacaoAlvo = 200000;
+  const taxaCrescimentoAnual = 0.03; // 3% expresso como decimal
 
-//PROCESSAMENTO
-let anos = 0;
-let populacaoAtual = populacaoInicial;
+  //PROCESSAMENTO
+  let anos = 0;
+  let populacaoAtual = populacaoInicial;
 
-while (populacaoAtual < populacaoAlvo) {
-  populacaoAtual += populacaoAtual * taxaCrescimentoAnual;
-  anos++;
-}
+  while (populacaoAtual < populacaoAlvo) {
+    populacaoAtual += populacaoAtual * taxaCrescimentoAnual;
+    anos++;
+  }
 
-//SAÍDA
-alert(`Serão necessários ${anos} anos para atingir uma população de ${populacaoAlvo} habitantes.`);
+  //SAÍDA
+  alert(`Serão necessários ${anos} anos para atingir uma população de ${populacaoAlvo} habitantes.`);
 
 </script>

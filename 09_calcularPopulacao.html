@@ -1,32 +1,32 @@
 <meta charset="UTF-8">
 <script>
-    /*
-    PROBLEMA
-    Considere que a população de uma cidade seja de 50000 habitantes, crescendo 1,5% ao ano. Apresente em tela a população prevista para um prazo de 5 anos e um prazo de 10 anos. Apresente os dados em tela.
-    */
+  /*
+  PROBLEMA
+  Considere que a população de uma cidade seja de 50000 habitantes, crescendo 1,5% ao ano. Apresente em tela a população prevista para um prazo de 5 anos e um prazo de 10 anos. Apresente os dados em tela.
+  */
 
-    //ENTRADA
-    const populacaoInicial = 50000;
-const taxaCrescimentoAnual = 0.015; 
+  //ENTRADA
+  const populacaoInicial = 50000;
+  const taxaCrescimentoAnual = 0.015;
 
-//PROCESSAMENTO
-let anos = 5;
-let populacao5Anos = populacaoInicial;
+  //PROCESSAMENTO
+  let anos = 5;
+  let populacao5Anos = populacaoInicial;
 
-while (anos > 0) {
-  populacao5Anos += populacao5Anos * taxaCrescimentoAnual;
-  anos--;
-}
+  while (anos > 0) {
+    populacao5Anos += populacao5Anos * taxaCrescimentoAnual;
+    anos--;
+  }
 
-anos = 10;
-let populacao10Anos = populacaoInicial;
+  anos = 10;
+  let populacao10Anos = populacaoInicial;
 
-while (anos > 0) {
-  populacao10Anos += populacao10Anos * taxaCrescimentoAnual;
-  anos--;
-}
+  while (anos > 0) {
+    populacao10Anos += populacao10Anos * taxaCrescimentoAnual;
+    anos--;
+  }
 
-//SAÍDA
-alert(`População prevista em 5 anos: ${populacao5Anos.toFixed(0)} habitantes\nPopulação prevista em 10 anos: ${populacao10Anos.toFixed(0)} habitantes`);
+  //SAÍDA
+  alert(`População prevista em 5 anos: ${populacao5Anos.toFixed(0)} habitantes\nPopulação prevista em 10 anos: ${populacao10Anos.toFixed(0)} habitantes`);
 
 </script>

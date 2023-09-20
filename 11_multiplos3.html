@@ -1,22 +1,22 @@
 <script>
-    /*
-    PROBLEMA: Múltiplos de 3
-    Criar um programa que imprima todos os números múltiplos de 3 entre 1 e 100. Calcule a soma dos números.
-    */
+  /*
+  PROBLEMA: Múltiplos de 3
+  Criar um programa que imprima todos os números múltiplos de 3 entre 1 e 100. Calcule a soma dos números.
+  */
 
-    //ENTRADA
-    const limiteSuperior = 100;
-let somaDosMultiplosDe3 = 0;
+  //ENTRADA
+  const limiteSuperior = 100;
+  let somaDosMultiplosDe3 = 0;
 
- //PROCESSAMENTO
-for (let numero = 1; numero <= limiteSuperior; numero++) {
-  if (numero % 3 === 0) {
-    alert(numero);
-    somaDosMultiplosDe3 += numero;
+  //PROCESSAMENTO
+  for (let numero = 1; numero <= limiteSuperior; numero++) {
+    if (numero % 3 === 0) {
+      alert(numero);
+      somaDosMultiplosDe3 += numero;
+    }
   }
-}
 
-//SAÍDA
-alert(`A soma dos números múltiplos de 3 entre 1 e 100 é: ${somaDosMultiplosDe3}`);
+  //SAÍDA
+  alert(`A soma dos números múltiplos de 3 entre 1 e 100 é: ${somaDosMultiplosDe3}`);
 
 </script>

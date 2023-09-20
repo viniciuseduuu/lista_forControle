@@ -1,23 +1,23 @@
 <meta charset="UTF-8">
 <script>
-    /*
-    PROBLEMA
-    Pergunte ao professor quantas notas o aluno obteve. Na sequência, usando for, peça para o professor informar todas as notas do aluno.
-    Calcule a média das notas e apresente o resultado na tela.
-    */
+  /*
+  PROBLEMA
+  Pergunte ao professor quantas notas o aluno obteve. Na sequência, usando for, peça para o professor informar todas as notas do aluno.
+  Calcule a média das notas e apresente o resultado na tela.
+  */
 
-    //ENTRADA
-    const numeroDeNotas = parseInt(prompt("Quantas notas o aluno obteve?"));
-let somaDasNotas = 0;
+  //ENTRADA
+  const numeroDeNotas = parseInt(prompt("Quantas notas o aluno obteve?"));
+  let somaDasNotas = 0;
 
-//PROCESSAMENTO
-for (let i = 1; i <= numeroDeNotas; i++) {
-  const nota = parseFloat(prompt(`Informe a nota ${i}:`));
-  somaDasNotas += nota;
-}
+  //PROCESSAMENTO
+  for (let i = 1; i <= numeroDeNotas; i++) {
+    const nota = parseFloat(prompt(`Informe a nota ${i}:`));
+    somaDasNotas += nota;
+  }
 
-//SAÍDA
-const media = somaDasNotas / numeroDeNotas;
-alert(`A média das notas é: ${media.toFixed(2)}`);
+  //SAÍDA
+  const media = somaDasNotas / numeroDeNotas;
+  alert(`A média das notas é: ${media.toFixed(2)}`);
 
 </script>

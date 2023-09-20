@@ -1,23 +1,23 @@
 <script>
-    /*
-    PROBLEMA: Investimentos
-    Joãozinho investiu R$ 1.000,00 e o investimento renderá 2% por dia útil. Quantos dias demorará para que Joãozinho consiga o total de R$ 2.000,00.
-    */
+  /*
+  PROBLEMA: Investimentos
+  Joãozinho investiu R$ 1.000,00 e o investimento renderá 2% por dia útil. Quantos dias demorará para que Joãozinho consiga o total de R$ 2.000,00.
+  */
 
-    //ENTRADA
-    const investimentoInicial = 1000;
-const objetivo = 2000;
-const taxaRendimentoDiaria = 0.02; 
-let dias = 0;
-let saldo = investimentoInicial;
+  //ENTRADA
+  const investimentoInicial = 1000;
+  const objetivo = 2000;
+  const taxaRendimentoDiaria = 0.02;
+  let dias = 0;
+  let saldo = investimentoInicial;
 
- //PROCESSAMENTO
-while (saldo < objetivo) {
-  dias++;
-  saldo += saldo * taxaRendimentoDiaria;
-}
+  //PROCESSAMENTO
+  while (saldo < objetivo) {
+    dias++;
+    saldo += saldo * taxaRendimentoDiaria;
+  }
 
-//SAÍDA
-alert(`Serão necessários ${dias} dias úteis para que o investimento alcance R$ 2.000,00.`);
+  //SAÍDA
+  alert(`Serão necessários ${dias} dias úteis para que o investimento alcance R$ 2.000,00.`);
 
 </script>
